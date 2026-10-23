@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиника  «Эксперт диагностик» | Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🩺 Клиника  «Эксперт диагностик»</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div id="mainPage">
+            
+            <!-- ИНФОРМАЦИЯ О БОЛЬНИЦЕ -->
+            <section class="hospital-banner">
+                <div class="banner-badge">Медицинский центр для детей и взрослых</div>
+                <h1>Клиника  «Эксперт диагностик»</h1>
+                <p class="banner-desc">
+                    Заботимся о здоровье всей семьи. Экспертная педиатрия, прием узких специалистов для детей и взрослых, современная УЗИ и ЛОР диагностика.
+                </p>
+
+                <div class="hospital-info-grid">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <strong>Адрес</strong>
+                            <span>г. Экибастуз, ул. Кеншилер, 14</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div>
+                            <strong>Режим работы</strong>
+                            <span>Пн–Пт: 12:00 – 20:00</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <strong>Горячая линия</strong>
+                            <a href="tel:+77053295414" class="info-link">+7 (705) 329-54-14</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-stats">
+                    <div class="stat-box">
+                        <strong>15+</strong>
+                        <span>Лет опыта работы</span>
+                    </div>
+                    <div class="stat-box">
+                        <strong>20 000+</strong>
+                        <span>Довольных пациентов</span>
+                    </div>
+                    <div class="stat-box">
+                        <strong>100%</strong>
+                        <span>Забота о здоровье</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- СЕКЦИЯ С ВРАЧАМИ -->
+            <section id="doctors">
+                <h2 class="section-title">Наши Врачи</h2>
+                <p class="section-subtitle">Выберите специалиста, чтобы увидеть подробную информацию</p>
+                
+                <div class="doctors-grid">
+
+                    <!-- ВРАЧ 1: ГЛАВНЫЙ ПЕДИАТР (ПЕРВЫЙ В СПИСКЕ) -->
+                    <div class="doctor-card" onclick="openDoctor('doc1')">
+                        <div class="image-wrapper">
+                            <img class="doctor-photo" src="Gemini_Generated_Image_zfzzjzzfzzjzzfzz.jpeg" alt="Доктор Данна Ахылбековна">
+                            <span class="doctor-badge">Главный педиатр-нутрициолог</span>
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Доктор Данна Ахылбековна</h3>
+                            <div class="doctor-exp">⏱️ Стаж: 13 лет</div>
+                            <a href="tel:+77471849881" class="doctor-phone" onclick="event.stopPropagation()">📞 +7 (747) 184-98-81</a>
+                            <div class="click-hint">Нажмите, чтобы открыть профиль →</div>
+                        </div>
+                    </div>
+
+                    <!-- ВРАЧ 2: ЛОР -->
+                    <div class="doctor-card" onclick="openDoctor('doc2')">
+                        <div class="image-wrapper">
+                            <img class="doctor-photo" src="WhatsApp Image 2026-10-05 at 21.51.48.jpeg" alt="Ахметжанова Гульбану Капасовна">
+                            <span class="doctor-badge">Интегративный ЛОР врач</span>
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Ахметжанова Гульбану Капасовна</h3>
+                            <div class="doctor-exp">⏱️ Стаж: 40 лет</div>
+                            <a href="tel:+77053295414" class="doctor-phone" onclick="event.stopPropagation()">📞 +7 (705) 329-54-14</a>
+                            <div class="click-hint">Нажмите, чтобы открыть профиль →</div>
+                        </div>
+                    </div>
+
+                    <!-- ВРАЧ 3: Кардиолог -->
+                    <div class="doctor-card" onclick="openDoctor('doc3')">
+                        <div class="image-wrapper">
+                            <img class="doctor-photo" src="WhatsApp Image 2026-10-05 at 21.52.13.jpeg" alt="Калкышбаева Мадина Алдабергеновна">
+                            <span class="doctor-badge">Врач-кардиолог (УЗИ сердца)</span>
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Калкышбаева Мадина Алдабергеновна</h3>
+                            <div class="doctor-exp">⏱️ Стаж: 20 лет</div>
+                            <a href="tel:+77053295414" class="doctor-phone" onclick="event.stopPropagation()">📞 +7 (705) 329-54-14</a>
+                            <div class="click-hint">Нажмите, чтобы открыть профиль →</div>
+                        </div>
+                    </div>
+
+                    <!-- ВРАЧ 4: УЗИ / Гинеколог -->
+                    <div class="doctor-card" onclick="openDoctor('doc4')">
+                        <div class="image-wrapper">
+                            <img class="doctor-photo" src="WhatsApp Image 2026-10-05 at 21.52.27.jpeg" alt="Курманова Динара Мамуновна">
+                            <span class="doctor-badge">Акушер-гинеколог / УЗИ</span>
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Курманова Динара Мамуновна</h3>
+                            <div class="doctor-exp">⏱️ Стаж: 25 лет</div>
+                            <a href="tel:+77053295414" class="doctor-phone" onclick="event.stopPropagation()">📞 +7 (705) 329-54-14</a>
+                            <div class="click-hint">Нажмите, чтобы открыть профиль →</div>
+                        </div>
+                    </div>
+
+                    <!-- ВРАЧ 5: Алдыбергенова Малика (УЗИст) -->
+                    <div class="doctor-card" onclick="openDoctor('doc5')">
+                        <div class="image-wrapper">
+                            <img class="doctor-photo" src="WhatsApp Image 2026-10-05 at 21.51.59.jpeg" alt="Алдыбергенова Малика Талгатовна">
+                            <span class="doctor-badge">Лучший УЗИст сердца</span>
+                        </div>
+                        <div class="doctor-info">
+                            <h3 class="doctor-name">Алдыбергенова Малика Талгатовна</h3>
+                            <div class="doctor-exp">⏱️ Стаж: 6 лет</div>
+                            <a href="tel:+77053295414" class="doctor-phone" onclick="event.stopPropagation()">📞 +7 (705) 329-54-14</a>
+                            <div class="click-hint">Нажмите, чтобы открыть профиль →</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ -->
+            <section class="main-extra-info">
+                <h2 class="section-title">Почему родители и пациенты выбирают нас</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Безопасное лечение</h3>
+                        <p>Используем только современные протоколы доказательной медицины без лишних назначений.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🥗</div>
+                        <h3>Детская нутрициология</h3>
+                        <p>Подбор правильного рациона, коррекция питания для младенцев и часто болеющих детей.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏡</div>
+                        <h3>Выезд на дом</h3>
+                        <p>Возможность вызвать педиатра на дом при высокой температуре и недомогании ребенка.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ДЕТАЛЬНАЯ СТРАНИЦА ВРАЧА -->
+        <div id="doctorDetailPage" class="doctor-detail-page">
+            <button class="back-btn" onclick="showMainPage()">← Назад к списку</button>
+            <div id="detailContainer" class="detail-content"></div>
+        </div>
+
+    </div>
+
+    <!-- ФУТЕР -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Инфо о клинике и Соцсети -->
+            <div class="footer-col footer-brand">
+                <a href="index.html" class="footer-logo">🩺 Клиника  «Эксперт диагностик»</a>
+                <p class="footer-desc">
+                    Заботимся о здоровье детей и взрослых в Экибастузе. Профессиональная медицина, точность и теплое отношение к каждому пациенту.
+                </p>
+                <div class="social-buttons">
+                    <a href="https://wa.me/77053295414" target="_blank" class="social-btn wa-btn">
+                        <span>💬 WhatsApp</span>
+                    </a>
+                    <a href="#" class="social-btn tg-btn">
+                        <span>✈️ Telegram</span>
+                    </a>
+                    <a href="#" class="social-btn insta-btn">
+                        <span>📸 Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Навигация -->
+            <div class="footer-col">
+                <h4 class="footer-title">Навигация</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Главная страница</a></li>
+                    <li><a href="about.html">О нашей клинике</a></li>
+                    <li><a href="#doctors">Наши врачи</a></li>
+                    <li><a href="about.html#contacts">Контакты и адрес</a></li>
+                </ul>
+            </div>
+
+            <!-- Кнопки быстрого действия -->
+            <div class="footer-col">
+                <h4 class="footer-title">Быстрая связь</h4>
+                <div class="footer-action-buttons">
+                    <a href="tel:+77053295414" class="action-btn primary-action">
+                        <span class="btn-icon">📞</span> Позвонить в центр
+                    </a>
+                    <a href="tel:+77471849881" class="action-btn secondary-action">
+                        <span class="btn-icon">🚑</span> Вызвать врача на дом
+                    </a>
+                    <a href="#doctors" class="action-btn outline-action">
+                        <span class="btn-icon">📅</span> Записаться на прием
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Нижняя панель -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 Клиника  «Эксперт диагностик». Все права защищены.</p>
+                <div class="footer-location">
+                    📍 г. Экибастуз, ул. Кеншилер, 14
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const doctorsData = {
+            doc1: {
+                name: "Данна Ахылбековна",
+                specialty: "Главный Врач-Педиатр высшей категории, Нутрициолог",
+                photo: "Gemini_Generated_Image_zfzzjzzfzzjzzfzz.jpeg",
+                phone: "+7 (747) 184-98-81",
+                experience: "13 лет",
+                about: "Специализируется на плановом наблюдении детей от рождения до 18 лет, проведении профилактических осмотров, составлении индивидуальных рационов питания и ведении детского здоровья.",
+                education: [
+                    "Казахский Национальный Медицинский Университет (2013 г.)",
+                    "Резидентура по специальности «Педиатрия» (2015 г.)",
+                    "Курсы детской нутрициологии и диетологии (2021 г.)"
+                ],
+                hours: "Пн - Пт: 12:00 - 20:00"
+            },
+            doc2: {
+                name: "Ахметжанова Гульбану Капасовна",
+                specialty: "Интегративный ЛОР врач высшей категории",
+                photo: "WhatsApp Image 2026-10-05 at 21.51.48.jpeg",
+                phone: "+7 (705) 329-54-14",
+                experience: "40 лет",
+                about: "Оказывает весь спектр экстренной и плановой ЛОР помощи взрослым и детям. Прием проходит в оборудованном ЛОР кабинете.",
+                education: [
+                    "Врач высшей категории",
+                    "Специализация по интегративной оториноларингологии"
+                ],
+                hours: "Пн - Сб: по записи"
+            },
+            doc3: {
+                name: "Калкышбаева Мадина Алдабергеновна",
+                specialty: "Врач-кардиолог, специалист УЗИ (ЭхоКГ)",
+                photo: "WhatsApp Image 2026-10-05 at 21.52.13.jpeg",
+                phone: "+7 (705) 329-54-14",
+                experience: "20 лет",
+                about: "Проводит УЗИ Сердца (ЭхоКГ) для детей с 3 лет. Ведет прием взрослым пациентам с 18 лет как врач-кардиолог.",
+                education: [
+                    "Специализация по кардиологии и эхокардиографии",
+                    "Сертифицированный специалист УЗИ диагностики"
+                ],
+                hours: "Пн - Пт: 12:00 - 18:00"
+            },
+            doc4: {
+                name: "Курманова Динара Мамуновна",
+                specialty: "Врач ультразвуковой диагностики, акушер-гинеколог высшей категории",
+                photo: "WhatsApp Image 2026-10-05 at 21.52.27.jpeg",
+                phone: "+7 (705) 329-54-14",
+                experience: "25 лет",
+                about: "Проводит экспертное УЗИ. Ведет гинекологический прием для детей и взрослых женщин.",
+                education: [
+                    "Высшая врачебная категория по акушерству и гинекологии",
+                    "Сертификат специалиста ультразвуковой диагностики"
+                ],
+                hours: "Уточняйте по телефону"
+            },
+            doc5: {
+                name: "Алдыбергенова Малика Талгатовна",
+                specialty: "УЗИст со стажем 6 лет",
+                photo: "WhatsApp Image 2026-10-05 at 21.51.59.jpeg",
+                phone: "+7 (705) 329-54-14",
+                experience: "6 лет",
+                about: "Проводит широкий спектр ультразвуковых исследований для детей с использованием современного оборудования.",
+                education: [
+                    "Работает по доказательной базе"
+                ],
+                hours: "Пн, Ср, Пт: 12:00 - 18:00"
+            }
+        };
+
+        function openDoctor(id) {
+            const doc = doctorsData[id];
+            const container = document.getElementById('detailContainer');
+
+            container.innerHTML = `
+                <div>
+                    <img src="${doc.photo}" alt="${doc.name}" class="detail-photo">
+                </div>
+                <div class="detail-info">
+                    <h1>${doc.name}</h1>
+                    <span class="detail-spec">${doc.specialty}</span>
+                    
+                    <div class="detail-block">
+                        <h3>О враче</h3>
+                        <p>${doc.about}</p>
+                    </div>
+
+                    <div class="detail-block">
+                        <h3>Образование / Квалификация</h3>
+                        <ul>
+                            ${doc.education.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div class="detail-block">
+                        <h3>График приема</h3>
+                        <p>📅 ${doc.hours}</p>
+                        <p>⏱️ Опыт работы: ${doc.experience}</p>
+                    </div>
+
+                    <a href="tel:${doc.phone.replace(/[^0-9+]/g, '')}" class="call-btn">Позвонить врачу: ${doc.phone}</a>
+                </div>
+            `;
+
+            document.getElementById('mainPage').style.display = 'none';
+            document.getElementById('doctorDetailPage').style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showMainPage() {
+            document.getElementById('doctorDetailPage').style.display = 'none';
+            document.getElementById('mainPage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
